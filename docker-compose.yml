@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  nginx:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - '8081:9080'
+    
